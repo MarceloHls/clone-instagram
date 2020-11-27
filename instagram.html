@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img src="./assets/imgs/smartphone.png" alt="smartphone">
+            <div class="pages">
+                <img src="./assets/imgs/0a2d3016f375.jpg" alt="">
+            </div>
+        </div>
+        <div class="instagram-login">
+            <div class="group">
+                <div class="instagram-tittle">
+                    <img src="./assets/imgs/instagram-tittle.png" alt="instagram-tittle">
+                </div>
+
+                <div class="inputs">
+                    <input type="text" name="userName" placeholder="Telefone,nome de usuário ou email">
+                    <input type="text" name="password" placeholder="Senha">
+                    <a href="#" class="bt-entrar">Entrar</a>
+                </div>
+                <div class="line">
+                    <div></div>ou<div></div>
+                </div>
+                <p class="facebook">Entrar com o Facebook</p>
+                <p class="password">Esqueceu a senha?</p>
+
+            </div>
+            <div class="group">
+                <p>Não tem uma conta?<span> Cadastre-se</span></p>
+            </div>
+            <div class="apps">
+                <p>Otenha o aplicativo</p>
+                <div class="iconsApp">
+                    <img src="./assets/imgs/apple.png" alt="apple">
+                    <img src="./assets/imgs/google.png" alt="google">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    const imgNames = [
+        '0a2d3016f375',
+        '6f03eb85463c',
+        '842fe5699220',
+        'd6bf0c928b5a',
+        'f0c687aa6ec2',]
+
+    let current = 1
+    let pages = document.querySelector('.pages')
+    let page = document.createElement('img')
+
+    setInterval(() => {
+        current = current > 4 ? 0 : current
+        pages.innerHTML = ''
+        page.src = `./assets/imgs/${imgNames[current]}.jpg`
+        pages.appendChild(page)
+        current++
+
+
+    }, 3000)
+
+
+</script>
+
+</html>
