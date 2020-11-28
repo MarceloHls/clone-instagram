@@ -3,7 +3,7 @@
 https://marcelohls.github.io/clone-instagram/
 
 
-Clone da pagina inicial o Instagram : https://www.instagram.com/?hl=pt-br
+Clone da pagina inicial do Instagram : https://www.instagram.com/?hl=pt-br
 
 
 
